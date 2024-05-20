@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #363D43;
+}
+
+nav {
+  background-color: #151C26;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.menu_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.menu_box:first-child {
+  border-right: 2px solid rgba(255, 255, 255, 0.2392156863);
+}
+.menu_box_item {
+  color: rgba(255, 255, 255, 0.9333333333);
+}
+.menu_box_item_icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.movie_info {
+  border-right: 2px solid rgba(255, 255, 255, 0.2392156863);
+  padding-bottom: 50px;
+}
+.movie_info_thumb_video {
+  width: 100%;
+}
+.movie_info_texts {
+  width: 90%;
+  margin: 0 auto;
+}
+.movie_info_texts_classification {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.movie_info_texts_classification_stars {
+  display: flex;
+  gap: 3px;
+}
+.movie_info_texts_classification_stars_icon {
+  color: #FFE000;
+  font-size: 1.2em;
+}
+.movie_info_texts_classification_pg {
+  background-color: rgba(138, 138, 138, 0.5215686275);
+  font-size: 0.8em;
+  color: white;
+  margin-left: 20px;
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+.movie_info_texts_title {
+  margin-top: 10px;
+  color: white;
+}
+.movie_info_texts_title_infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.movie_info_texts_title_infos_item {
+  display: flex;
+  color: rgb(216, 216, 216);
+  font-size: 0.9em;
+  align-items: center;
+  gap: 5px;
+}
+.movie_info_texts_description {
+  margin-top: 20px;
+  font-size: 1em;
+  color: white;
+}
+.movie_tickets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.movie_tickets_select {
+  width: 90%;
+  background-color: #151B24;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.movie_tickets_select_box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.movie_tickets_select_box_screen {
+  background-color: #01ACEC;
+  width: 90%;
+  text-align: center;
+  height: 10px;
+  border-radius: 10px;
+  box-shadow: 0px -10px 30px rgba(1, 173, 236, 0.7607843137);
+}
+.movie_tickets_select_box_seats {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.movie_tickets_select_box_seats_a, .movie_tickets_select_box_seats_b, .movie_tickets_select_box_seats_c, .movie_tickets_select_box_seats_d, .movie_tickets_select_box_seats_e, .movie_tickets_select_box_seats_f, .movie_tickets_select_box_seats_g, .movie_tickets_select_box_seats_h, .movie_tickets_select_box_seats_i {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.movie_tickets_select_box_seats_seat {
+  background-color: #6662B3;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  padding-top: 9px;
+  color: rgba(255, 255, 255, 0.795);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.movie_tickets_select_box_seats_seat--ocupied {
+  cursor: alias;
+  background-color: #01ACEC;
+}
+.movie_tickets_select_box_seats_seat--selected {
+  background-color: #75CD03;
+}
+.movie_tickets_select_box_seats_empty {
+  width: 35px;
+  height: 35px;
+  background: none;
+}
+.movie_tickets_select_checkout {
+  background-color: #121416;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+.movie_tickets_select_checkout_description {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 40px;
+}
+.movie_tickets_select_checkout_description_item {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.movie_tickets_select_checkout_price {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.movie_tickets_select_checkout_button {
+  width: 150px;
+  background-color: #060606;
+  border: 0;
+  color: #75CD03;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all ease-in 300ms;
+}
+.movie_tickets_select_checkout_button:hover {
+  background-color: #75CD03;
+  color: #060606;
+}

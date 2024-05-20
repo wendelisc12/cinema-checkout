@@ -1,0 +1,15 @@
+@import "base/maps";
+@import "base/maps";
+
+body{
+    background-color: map-get($primary, principal );
+}
+
+nav{
+    background-color: map-get($primary, nav );
+    @include template-grid;
+}
+
+main{
+    @include template-grid;
+}

@@ -1,0 +1,21 @@
+$primary:(
+    "nav":#151C26,
+    "principal": #363D43,
+    "vr": #ffffff3d,
+    "stars":#FFE000,
+    "pg": #8a8a8a85
+);
+
+$seats:(
+    "avaliable":#6662B3,
+    "your":#75CD03,
+    "reserved": #404246,
+    "bg": #151B24,
+    "checkout": #121416,
+    "checkout-button":#060606
+);
+
+@mixin template-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
